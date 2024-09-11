@@ -226,16 +226,20 @@ footer p {
 }
 
 
-
 @media (max-width: 768px) {
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .achievement {
-        width: 100%;
+    .section {
+        max-width: 90%;  /* Riduci la larghezza al 90% dello schermo per tablet */
+        margin: 0 auto;  /* Aggiungi margini ai lati */
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
+@media (max-width: 480px) {
+    .section {
+        max-width: 85%;  /* Riduci ancora la larghezza al 85% su telefoni cellulari */
+        margin: 0 auto;  /* Margini ai lati */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
